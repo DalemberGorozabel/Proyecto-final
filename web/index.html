@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <form onsubmit="Login()" class="formulario" id="formulario-login">
+        <center>
+            <h2>Inicio de Sesión de Seguimiento a Graduados FACCI</h2>
+        </center>
+        <div class="contenedor">
+            <div class="input-contenedor">
+                <i class="fas fa-envelope icon"></i>
+                <input type="text" id="correo" name="correo" placeholder="Ingrese su correo electrònico"></div>
+            <div class="input-contenedor">
+                <i class="fas fa-key icon"></i>
+                <input type="password" id="password" name="password" placeholder="Contraseña"></div>
+            <input type="button" value="Inicias Sesión" class="button" id="boton" onclick="Login()"></a>
+            <p>¿Aún no tienes Cuenta?<a class="link" href="Registro.html">Registrate</a></p>
+            <p>¿Olvidaste tu contraseña?<a class="linkrecuperar" href="Cambiar contraseña.html">Recuperar</a></p>
+            <center><a class="linksugerencia" href="sugerencia.html">¿Alguna Sugerencia?</a></center>
+        </div>
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script script src="database.js">
+    </script>
+    <script src="Login.js"></script>
+
+
+</body>
+
+</html>

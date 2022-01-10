@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="diseñopirincipal3.css">
+    <title>Galería</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <a href="principal1.html">
+                    <img src="icons/home-solid.svg" alt=""> INICIO
+                </a>
+
+                <a href="principal2.html">
+                    <img src="icons/user-solid.svg" alt=""> SOBRE NOSOTROS
+                </a>
+
+                <a href="galeria.html">
+                    <img src="icons/eye-regular.svg" alt=""> FOTOS
+                </a>
+
+                <a href="sugeprincipal3.html">
+                    <img src="icons/envelope-solid.svg" alt=""> SUGERENCIA
+                </a>
+                <a href="">
+                    <span id="user" class="message" aria-expanded="false" class="text-white">.</span>
+                </a>
+                <a href="#">
+                    <img src="icons/logout-svgrepo-com.svg" alt="" onclick="salir()" id="btn-salir"> Salir
+                </a>
+            </ul>
+        </nav>
+    </div>
+    <h1>Galeria de Imágenes de Graduados</h1>
+    <ul class="galeria">
+        <li>
+            <a href="#img1"><img src="ima/img1.jpg"></a>
+        </li>
+        <li>
+            <a href="#img2"><img src="ima/img2.jpg"></a>
+        </li>
+        <li>
+            <a href="#img3"><img src="ima/img3.jpg"></a>
+        </li>
+        <li>
+            <a href="#img4"><img src="ima/img4.jpg"></a>
+        </li>
+        <li>
+            <a href="#img5"><img src="ima/img5.jpg"></a>
+        </li>
+        <li>
+            <a href="#img6"><img src="ima/img6.jpg"></a>
+        </li>
+        <li>
+            <a href="#img7"><img src="ima/img7.jpg"></a>
+        </li>
+        <li>
+            <a href="#img8"><img src="ima/img8.jpg"></a>
+        </li>
+    </ul>
+    <div class="modal" id="img1">
+        <h3>Graduaciones</h3>
+        <div class="imagen">
+            <a href="#img8">&#60;</a>
+            <a href="#img2"><img src="ima/img1.jpg"></a>
+            <a href="#img2">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+    </div>
+    <div class="modal" id="img2">
+        <h3>Graduaciones</h3>
+        <div class="imagen">
+            <a href="#img1">&#60;</a>
+            <a href="#img3"><img src="ima/img2.jpg"></a>
+            <a href="#img3">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+    </div>
+    <div class="modal" id="img3">
+        <h3>Graduaciones</h3>
+        <div class="imagen">
+            <a href="#img2">&#60;</a>
+            <a href="#img4"><img src="ima/img3.jpg"></a>
+            <a href="#img4">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+    </div>
+    <div class="modal" id="img4">
+        <h3>Graduaciones</h3>
+        <div class="imagen">
+            <a href="#img3">&#60;</a>
+            <a href="#img5"><img src="ima/img4.jpg"></a>
+            <a href="#img5">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+    </div>
+    <div class="modal" id="img5">
+        <h3>Graduaciones</h3>
+        <div class="imagen">
+            <a href="#img4">&#60;</a>
+            <a href="#img6"><img src="ima/img5.jpg"></a>
+            <a href="#img6">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+    </div>
+    <div class="modal" id="img6">
+        <h3>Graduaciones</h3>
+        <div class="imagen">
+            <a href="#img5">&#60;</a>
+            <a href="#img7"><img src="ima/img6.jpg"></a>
+            <a href="#img7">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+    </div>
+    <div class="modal" id="img7">
+        <h3>Graduaciones</h3>
+        <div class="imagen">
+            <a href="#img6">&#60;</a>
+            <a href="#img8"><img src="ima/img7.jpg"></a>
+            <a href="#img8">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+    </div>
+    <div class="modal" id="img8">
+        <h3>Graduaciones</h3>
+        <div class="imagen">
+            <a href="#img8">&#60;</a>
+            <a href="#img1"><img src="ima/img8.jpg"></a>
+            <a href="#img1">></a>
+        </div>
+        <a class="cerrar" href="">X</a>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script script src="database.js">
+    </script>
+
+    <script src="Login.js"></script>
+    <script src="Logaut.js"></script>
+</body>
+
+</html>
